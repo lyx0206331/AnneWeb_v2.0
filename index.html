@@ -23,7 +23,8 @@
 
     <!-- CSS | font-awesome -->
     <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <!-- CSS | animate -->
     <!-- Credits: http://daneden.github.io/animate.css/ -->
@@ -69,6 +70,11 @@
         }
 
     </style>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=Cog28xcZGyqrFnGZZTm1VhbmwpIRklBi"></script>
+
 
 </head>
 
@@ -187,11 +193,11 @@
                                     <div id="profile_social">
                                         <h6>社交软件</h6>
 
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa fa-dribbble"></i></a>
-                                        <a href="#"><i class="fa fa-foursquare"></i></a>
+                                        <a href="#"><i class="fa fa-qq"></i></a>
+                                        <a href="#"><i class="fa fa-weixin"></i></a>
+                                        <a href="#"><i class="fa fa-weibo"></i></a>
+                                        <a href="#"><i class="fa fa-renren"></i></a>
+                                        <a href="#"><i class="fa fa-phone"></i></a>
                                         <div class="clear"></div>
                                     </div>
                                     <!-- End Name -->
@@ -805,7 +811,7 @@
 
 
                                         <!-- client reference -->
-                                        <div class="row">
+                                        <div class="row" hidden="hidden">
                                             <div class="col-md-12">
 
                                                 <div class="reference clearfix">
@@ -888,9 +894,9 @@
                                                 <div class="portfolio logo" data-cat="logo">
                                                     <!-- .portfolio-wrapper -->
                                                     <div class="portfolio-wrapper">
-                                                        <a href="images/portfolio/1.jpg" rel="portfolio"
+                                                        <a href="images/portfolio/2.jpg" rel="portfolio"
                                                            title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
-                                                            <img src="images/portfolio/1.jpg" alt="Visual Infography"/>
+                                                            <img src="images/portfolio/2.jpg" alt="Visual Infography"/>
                                                             <div class="label">
                                                                 <div class="label-text">
                                                                     <a class="text-title">Anne 个人网站</a>
@@ -909,13 +915,13 @@
                                                 <div class="portfolio catWeb" data-cat="catWeb">
                                                     <!-- .portfolio-wrapper -->
                                                     <div class="portfolio-wrapper">
-                                                        <a href="http://www.youtube.com/watch?v=c9MnSeYYtYY"
-                                                           rel="portfolio">
+                                                        <a href="v1.0/index.html">
 
-                                                            <img src="images/portfolio/2.jpg" alt="Visual Infography"/>
+                                                            <img src="images/portfolio/1.jpg" alt="Visual Infography"/>
                                                             <div class="label">
                                                                 <div class="label-text">
-                                                                    <a class="text-title">Project Name</a>
+                                                                    <a class="text-title" href="v1.0/index.html">Anne
+                                                                        个人网站</a>
                                                                     <span class="text-category">Web Design</span>
                                                                 </div>
                                                                 <div class="label-bg"></div>
@@ -2769,7 +2775,7 @@
                                     <!-- .contact -->
                                     <div id="contact" class="content_2">
 
-                                        <h1 class="h-bloc">Contact - Contact Me</h1>
+                                        <h1 class="h-bloc">联系我</h1>
 
 
                                         <div class="row">
@@ -2785,37 +2791,29 @@
                                                             <!--<h3 class="main-heading"><span>Contact info</span></h3>-->
 
                                                             <div class="title_content" style="float: none;">
-                                                                <div class="text_content">Contact info</div>
+                                                                <div class="text_content">联系信息</div>
                                                                 <div class="clear"></div>
                                                             </div>
 
                                                             <ul>
                                                                 <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-map-marker"></i> Adress:</span>
-                                                                    San Francisco , CA.<br/><br/></li>
+                                                                        class="fa fa-map"></i> 地点:</span>
+                                                                    武汉市洪山区.<br/><br/></li>
                                                                 <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-envelope"></i> Email:</span>
-                                                                    brown.smith@gmail.com
+                                                                        class="fa fa-envelope"></i> 邮箱:</span>
+                                                                    359473771@qq.com
                                                                 </li>
                                                                 <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-phone"></i> Phone:</span>
-                                                                    +123 456 789 111
+                                                                        class="fa fa-phone"></i> 电话:</span>
+                                                                    13476115920
                                                                 </li>
                                                                 <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-globe"></i> Website:</span>
-                                                                    www.brown-smith.com
+                                                                        class="fa fa-edge"></i> 网站:</span>
+                                                                    www.liuyistyle.com
                                                                 </li>
                                                                 <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-comment"></i> Skype:</span>
-                                                                    brown-smith-skype
-                                                                </li>
-                                                                <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-thumbs-up"></i> G. Drive:</span>
-                                                                    brown-s-gm@gmail.com
-                                                                </li>
-                                                                <li><span class="span-info"><i
-                                                                        class="glyphicon glyphicon-unchecked"></i> Skydrive:</span>
-                                                                    brown-s-sk@hotmail.com
+                                                                        class="fa fa-qq"></i> QQ:</span>
+                                                                    359473771
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -2825,17 +2823,17 @@
                                                         <!--<h3 class="main-heading" style="margin-left: 22px;"><span>Follow me</span></h3>-->
 
                                                         <div class="title_content tiltle_contacts" style="float: none;">
-                                                            <div class="text_content">Follow me</div>
+                                                            <div class="text_content">找到我</div>
                                                             <div class="clear"></div>
                                                         </div>
 
 
                                                         <div id="profile_social">
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                            <a href="#"><i class="fa fa fa-dribbble"></i></a>
-                                                            <a href="#"><i class="fa fa-foursquare"></i></a>
+                                                            <a href="#"><i class="fa fa-qq"></i></a>
+                                                            <a href="#"><i class="fa fa-weixin"></i></a>
+                                                            <a href="#"><i class="fa fa-weibo"></i></a>
+                                                            <a href="#"><i class="fa fa-renren"></i></a>
+                                                            <a href="#"><i class="fa fa-phone"></i></a>
                                                             <div class="clear"></div>
                                                         </div>
 
@@ -2845,7 +2843,7 @@
                                                     <div class="col-md-7">
                                                         <!-- Contact Form -->
                                                         <div class="title_content" style="float: none;">
-                                                            <div class="text_content">Let's keep in touch</div>
+                                                            <div class="text_content">保持联系</div>
                                                             <div class="clear"></div>
                                                         </div>
 
@@ -2857,36 +2855,37 @@
 
                                                             <form action="#" id="contactform">
                                                                 <p class="form-group" id="contact-name">
-                                                                    <label for="name">Your Name</label>
+                                                                    <label for="name">你的名字</label>
                                                                     <input type="text" name="name"
                                                                            class="form-control name-contact"
                                                                            id="inputSuccess" placeholder="Name..."/>
                                                                 </p>
                                                                 <p class="form-group" id="contact-email">
-                                                                    <label for="email">Your Email</label>
+                                                                    <label for="email">你的邮箱</label>
                                                                     <input type="text" name="email"
                                                                            class="form-control email-contact"
                                                                            id="inputSuccess" placeholder="Email..."/>
                                                                 </p>
 
                                                                 <p class="form-group" id="contact-message">
-                                                                    <label for="message">Your Message</label>
+                                                                    <label for="message">你的留言</label>
                                                                     <textarea name="message" cols="88" rows="6"
                                                                               class="form-control message-contact"
                                                                               id="inputError"
                                                                               placeholder="Message..."></textarea>
                                                                 </p>
-                                                                <input type="reset" name="reset" value="CLEAR"
+                                                                <input type="reset" name="reset" value="清除"
                                                                        class="reset">
-                                                                <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
+                                                                <input type="submit" name="submit" value="发送"
+                                                                       class="submit">
 
-                                                                <section class="button-demo"
+                                                                <!--<section class="button-demo"
                                                                          style="display: inline-block;">
                                                                     <button class="ladda-button submit send_email"
                                                                             name="submit" data-color="green"
-                                                                            data-style="expand-left">SEND MESSAGE
+                                                                            data-style="expand-left">发送
                                                                     </button>
-                                                                </section>
+                                                                </section>-->
 
                                                             </form>
                                                         </div>
@@ -3145,3 +3144,12 @@
 <![endif]-->
 </body>
 </html>
+
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(114.377831, 30.527337), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("武汉");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>

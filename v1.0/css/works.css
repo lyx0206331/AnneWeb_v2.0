@@ -1,0 +1,868 @@
+@charset "utf-8";
+body, button, input, select, textarea {
+    font: 12px/1.8 "微软雅黑", verdana;
+    background: #07182a;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+body, div, b, span, em, i, strong, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+    _background-image: none;
+    _background-attachment: fixed;
+}
+
+dl, ul, ol, li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+    display: inline
+}
+
+.fr {
+    float: right;
+    display: inline
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+
+.w {
+    width: 100%;
+}
+
+.w1 {
+    width: 1250px;
+    margin: 0 auto;
+    height: 130px;
+}
+
+/** 标题 **/
+.works-title {
+    width: 583px;
+    height: 90px;
+    padding: 20px 0 0 0;
+    margin: 33px auto 0 auto;
+    background: url(../img2/works_title.png) no-repeat;
+}
+
+.works-title i {
+    display: block;
+    width: 237px;
+    height: 69px;
+    margin: 0 auto 20px auto;
+    background: #07182a url(../img2/works_title.png) no-repeat -172px -107px;
+}
+
+/** 菜单 **/
+#content {
+    width: 1250px;
+    position: relative;
+    margin: 100px auto 0 auto;
+}
+
+.dh {
+    width: 100%;
+    background: #07182a;
+    position: absolute;
+    z-index: 998;
+    top: 170px;
+    left: 0;
+    height: 60px;
+}
+
+.hover {
+    top: 0;
+    background: #07182a;
+    position: fixed;
+    width: 100%;
+    height: 0px;
+    z-index: 999;
+}
+
+.w_cata {
+    width: 508px;
+    margin: 0 auto;
+    height: 24px;
+    padding: 15px 0;
+}
+
+.w_cata div {
+    cursor: pointer;
+    float: left;
+    width: 127px;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+    color: #86ead3;
+    font-size: 14px;
+}
+
+.w_cata div:hover {
+    color: #fff;
+}
+
+.w_cata .cur {
+    color: #fff;
+    font-size: 14px;
+}
+
+/** 内容 **/
+.field-items {
+    width: 1300px;
+    margin: 0 auto;
+    -webkit-transition: all 1s 0.3s;
+    -moz-transition: all 1s 0.3s;
+    -ms-transition: all 1s 0.3s;
+}
+
+.box {
+    width: 270px;
+    height: 270px;
+    margin: 0 0 28px 0;
+    float: left;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    background: #fff;
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+}
+
+.box .a-img {
+    display: block;
+    width: 270px;
+    height: 235px;
+    overflow: hidden;
+}
+
+.box .a-img img {
+    display: block;
+    width: 270px;
+    height: 235px;
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s
+}
+
+.box:hover .a-img img {
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s
+}
+
+.box span {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 13px;
+    font-family: "Microsoft Yahei";
+    color: #2b8c75;
+    padding: 10px 0 0 0;
+}
+
+.box:hover span {
+    color: #03362a;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+}
+
+.box .a-zd {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 270px;
+    height: 235px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+
+.box:hover .a-zd {
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    -moz-transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s
+}
+
+.box .a-zd i {
+    display: block;
+    width: 74px;
+    height: 74px;
+    background: url(../img2/icon.png) no-repeat -46px -150px;
+    margin: 120px 0 0 95px;
+    opacity: 0.3;
+    -moz-transform: rotateY(-360deg) translateY(130px) scale(0.3, 0.3);
+    -webkit-transform: rotateY(-360deg) translateY(130px) scale(0.3, 0.3);
+    -o-transform: rotateY(-360deg) translateY(130px) scale(0.3, 0.3);
+    transform: rotateY(-360deg) translateY(130px) scale(0.3, 0.3);
+}
+
+.box:hover .a-zd i {
+    display: block;
+    margin: 80px 0 0 95px;
+    -moz-transform: rotateY(0deg) translateY(0) scale(1, 1);
+    -webkit-transform: rotateY(0deg) translateY(0) scale(1, 1);
+    -o-transform: rotateY(0deg) translateY(0) scale(1, 1);
+    transform: rotateY(0deg) translateY(0) scale(1, 1);
+    -moz-transition: all ease 0.8s;
+    -webkit-transition: all ease 0.8s;
+    -o-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    opacity: 1;
+}
+
+/**切换效果**/
+.isotope-item.isotope-hidden {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.isotope {
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+}
+
+.isotope .isotope-item {
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+}
+
+.isotope {
+    transition-property: height, width;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -o-transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    transition-property: transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -o-transition-property: top, left, opacity;
+}
+
+.no-transition.isotope {
+    transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+}
+
+.no-transition.isotope .isotope-item {
+    transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+}
+
+.isotope .no-transition.isotope-item {
+    transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -o-transition-duration: 0s;
+}
+
+/****************  works1  ***************/
+.dtop {
+    width: 100%;
+    height: 73px;
+    background: #007157;
+    overflow: hidden;
+}
+
+.dtopbox {
+    width: 504px;
+    height: 73px;
+    margin: 0 auto;
+    background: url(../img2/d_02.jpg) repeat-x;
+    overflow: hidden;
+}
+
+.dtopbox_left {
+    width: 69px;
+    height: 24px;
+    background: #007157;
+    margin-top: 24px;
+    overflow: hidden;
+    float: left;
+}
+
+.dtopbox_left a {
+    color: #6dbdab;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dtopbox_left a i {
+    width: 7px;
+    height: 24px;
+    overflow: hidden;
+    background: url(../img2/d.png) no-repeat 0px -56px;
+    display: block;
+    margin: 7px 3px 0 0;
+    float: left;
+}
+
+.dtopbox_left a span {
+    width: 57px;
+    height: 24px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.dtopbox_left a:hover i {
+    width: 7px;
+    height: 24px;
+    background: url(../img2/d.png) no-repeat -15px -56px;
+    display: block;
+}
+
+.dtopbox_left a:hover {
+    color: #fff;
+}
+
+.dtopbox_logo {
+    width: 76px;
+    height: 55px;
+    background: #007157;
+    margin: 10px 0 0 145px;
+    float: left;
+}
+
+.dtopbox_logo1 {
+    width: 52px;
+    height: 55px;
+    background: url(../img2/d.png) no-repeat 0px 0px;
+    margin: 0 13px 0 11px;
+}
+
+.dtopbox_right {
+    width: 79px;
+    height: 24px;
+    background: #007157;
+    margin-top: 24px;
+    overflow: hidden;
+    float: right;
+}
+
+.dtopbox_right a {
+    color: #6dbdab;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dtopbox_right a i {
+    width: 7px;
+    height: 24px;
+    overflow: hidden;
+    background: url(../img2/d.png) no-repeat -6px -56px;
+    display: block;
+    margin: 7px 0 0 2px;
+    float: right;
+}
+
+.dtopbox_right a span {
+    width: 64px;
+    height: 24px;
+    overflow: hidden;
+    display: block;
+    float: right;
+}
+
+.dtopbox_right a:hover i {
+    width: 7px;
+    height: 24px;
+    background: url(../img2/d.png) no-repeat -21px -56px;
+    display: block;
+}
+
+.dtopbox_right a:hover {
+    color: #fff;
+}
+
+.dtopbox_right a:hover ul.bottom-ul {
+    display: block;
+}
+
+.bottom-ul {
+    width: 430px;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    margin-left: 75px;
+}
+
+.bottom-ul li {
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+}
+
+.bottom-ul li b {
+    margin: 4px 6px 0 10px;
+    display: block;
+    float: left;
+    height: 14px;
+    background-image: url(../img2/icon.png);
+}
+
+.bottom-ul li b.i01 {
+    background-position: 0 -115px;
+    width: 9px;
+}
+
+.bottom-ul li b.i02 {
+    background-position: -15px -115px;
+    width: 12px;
+}
+
+.bottom-ul li b.i03 {
+    background-position: -32px -115px;
+    width: 15px;
+}
+
+.bottom-ul li i {
+    margin: 4px 6px 0 10px;
+    display: block;
+    float: left;
+    height: 14px;
+    background-image: url(../img2/icon.png);
+}
+
+.bottom-ul li i.i01 {
+    background-position: 0 -115px;
+    width: 9px;
+}
+
+.bottom-ul li i.i02 {
+    background-position: -15px -115px;
+    width: 12px;
+}
+
+.bottom-ul li i.i03 {
+    background-position: -32px -115px;
+    width: 15px;
+}
+
+.topimg {
+    width: 100%;
+    height: 854px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.tmain {
+    width: 1250px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.tmainimg {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-align: center;
+    min-height: 30px;
+    background: url(../img2/pix.gif) no-repeat center;
+}
+
+.wcld {
+    width: 100%;
+    height: 35px;
+    margin: 40px 0 20px 0;
+    display: block;
+    overflow: hidden;
+}
+
+.wcldxian {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #97c6b8;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.wcldwz {
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    color: #005848;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -22px
+}
+
+.wcldwz span {
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    color: #005848;
+    font-size: 30px;
+    overflow: hidden;
+    background: #a8e7d4;
+    padding: 0 10px;
+}
+
+#allxf {
+    width: 79px;
+    height: auto;
+    overflow: hidden;
+    position: fixed;
+    right: 3px;
+    top: 110px;
+    z-index: 9999;
+    _position: absolute;
+    _top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight)-34+"px");
+}
+
+.allxf_top {
+    width: 79px;
+    height: 80px;
+    background: url(../img2/d.png) no-repeat -52px 0px;
+}
+
+.allxf_gl {
+    width: 37px;
+    height: 180px;
+    border-left: 1px solid #00816c;
+    border-right: 1px solid #00816c;
+    margin: -12px 0 0 21px;
+    overflow: hidden;
+}
+
+.allxf_glnks {
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid #00816c;
+    overflow: hidden;
+}
+
+.allxf_glnks a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.allxf_glnks a i {
+    width: 14px;
+    height: 27px;
+    margin: 11px 0 0 12px;
+    background: url(../img2/d.png) no-repeat -16px -82px;
+    display: block;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.allxf_glnks a:hover {
+    background: #00816c;
+}
+
+.allxf_glnks a:hover i {
+    background: url(../img2/d.png) no-repeat -1px -82px;
+}
+
+.allxf_glnks1 {
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid #00816c;
+    overflow: hidden;
+}
+
+.allxf_glnks1 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.allxf_glnks1 a i {
+    width: 14px;
+    height: 27px;
+    margin: 11px 0 0 12px;
+    background: url(../img2/d.png) no-repeat -31px -82px;
+    display: block;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.allxf_glnks1 a:hover {
+    background: #00816c;
+}
+
+.allxf_glnks1 a:hover i {
+    background: url(../img2/d.png) no-repeat -46px -82px;
+}
+
+.allxf_glnks2 {
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #00816c;
+    overflow: hidden;
+}
+
+.allxf_glnks2 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.allxf_glnks2 a i {
+    width: 22px;
+    height: 15px;
+    margin: 15px 0 0 8px;
+    background: url(../img2/d.png) no-repeat -2px -111px;
+    display: block;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.allxf_glnks2 a:hover {
+    background: #00816c;
+}
+
+.allxf_glnks2 a:hover i {
+    background: url(../img2/d.png) no-repeat -25px -111px;
+}
+
+.allxf_glnks3 {
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+}
+
+.allxf_glnks3 a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.allxf_glnks3 a i {
+    width: 19px;
+    height: 19px;
+    margin: 12px 0 0 8px;
+    background: url(../img2/d.png) no-repeat 0px -125px;
+    display: block;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.allxf_glnks3 a:hover {
+    background: #00816c;
+}
+
+.allxf_glnks3 a:hover i {
+    background: url(../img2/d.png) no-repeat 0px -145px;
+}
+
+.allxf_bo {
+    width: 39px;
+    height: 20px;
+    background: url(../img2/d.png) no-repeat -91px -82px;
+    margin-left: 21px;
+}
+
+.abottom {
+    width: 100%;
+    height: 100px;
+    background: #007157;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.abottombox {
+    width: 1250px;
+    height: 175px;
+    margin: 70px auto;
+}
+
+.abottombox_left {
+    width: 500px;
+    height: 175px;
+    background: url(../img/abottom_28.jpg) repeat-x;
+    float: left;
+    margin-top: 3px;
+}
+
+.abottombox_leftback {
+    width: 99px;
+    height: 24px;
+    background: #007157;
+    margin: 34px auto;
+    overflow: hidden;
+}
+
+.abottombox_leftback a {
+    color: #80b8ab;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.abottombox_leftback a i {
+    width: 12px;
+    height: 24px;
+    overflow: hidden;
+    background: url(../img2/d.png) no-repeat -62px -82px;
+    display: block;
+    margin: 4px 5px 0 0;
+    float: left;
+}
+
+.abottombox_leftback a span {
+    width: 81px;
+    height: 24px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.abottombox_leftback a:hover i {
+    width: 12px;
+    height: 24px;
+    background: url(../img2/d.png) no-repeat -74px -82px;
+    display: block;
+}
+
+.abottombox_leftback a:hover {
+    color: #fff;
+}
+
+.abottombox_leftlogo {
+    width: auto;
+    height: auto;
+    float: right;
+}
+
+.abottombox_right {
+    width: 720px;
+    height: 175px;
+    float: right;
+}
+
+.abottombox_right_name {
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    overflow: hidden;
+    line-height: 22px;
+}
+
+.abottombox_right_txt {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.abottombox_right_txt li {
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.abottombox_right_txt li a:hover {
+    text-decoration: underline;
+}
+
+.cols {
+    width: 1250px;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin: 30px auto;
+}
+
+.colsimg {
+    width: 100%;
+    height: 79px;
+    background: none /*url(../img/list_03.jpg)*/ repeat-x;
+    text-align: center;
+}
+
+
+
+

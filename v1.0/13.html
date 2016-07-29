@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Anne设计师·网络品牌 | Anne作品案例</title>
+    <meta name="Keywords" content="Anne设计师·网络品牌 | Anne个人网站 | Anne作品案例 | 网页设计，视觉美化，品牌设计，网站制作，APP界面设计">
+    <meta name="Description" content="Anne设计师·网络品牌 | Anne个人网站 | Anne作品案例"/>
+    <meta name="viewport" content="width=1250, initial-scale=0.6"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="img2/favicon.ico" mce_href="img2/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img2/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/works.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/wokrs.js"></script>
+</head>
+<body style="background:#131b3f;">
+<script>
+    function ImagesDelay(container) {
+        //离屏幕下方50像素内的图片加载
+        var minBottom = 50;
+        var srcData = new Array();
+        var waitingUrl = "";
+        var lastBottomX = 0;
+
+        //will server do
+        //Replace src
+        var imgs = $(container).find("img");
+        var id = 0;
+        imgs.each(function () {
+            id++;
+            var rect = this.getBoundingClientRect();
+            $(this).attr("ld", "l" + id);
+            srcData[srcData.length] = {"ld": "l" + id, "src": $(this).attr("src"), "rect": rect};
+            $(this).attr("src", waitingUrl);
+        });
+        $(window).scroll(function () {
+            LoadImages();
+        });
+        // do first loading
+        LoadImages();
+
+        function CalcRact() {
+            for (var i = 0; i < srcData.length; i++) {
+                var imgs = $(container).find("img[ld=" + srcData[i].ld + "]");
+                if (imgs.length > 0) {
+                    srcData[i].rect = imgs[0].getBoundingClientRect();
+                }
+            }
+        }
+
+        function LoadImage(img, src) {
+            var appname = navigator.appName.toLowerCase();
+            if (appname.indexOf("netscape") == -1) {
+                //ie
+                img.onreadystatechange = function () {
+                    if (img.readyState == "complete") {
+                        CalcRact();
+                    }
+                };
+            } else {
+                //firefox
+                img.onload = function () {
+                    if (img.complete == true) {
+                        CalcRact();
+                    }
+                }
+            }
+            img.src = src;
+            if (img.width > 0 && img.complete) {
+                CalcRact();
+            }
+        }
+
+        function LoadImages() {
+            var bottomX = $(window).height() + $(window).scrollTop();
+            if (lastBottomX != bottomX) {
+                lastBottomX = bottomX;
+                var needData = GetNeedLoadImgs(bottomX);
+                for (var i = 0; i < needData.length; i++) {
+                    var imgs = $(container).find("img[ld=" + needData[i].ld + "]");
+                    if (imgs.length > 0) {
+                        LoadImage(imgs[0], needData[i].src);
+                    }
+
+                }
+            }
+        }
+
+        function GetNeedLoadImgs(bottomX) {
+            var x = bottomX + minBottom;
+            var result = new Array();
+            var needLoad = new Array();
+            for (var i = 0; i < srcData.length; i++) {
+                var rect = srcData[i].rect;
+                if (x >= rect.top) {
+                    result[result.length] = srcData[i];
+                } else {
+                    needLoad[needLoad.length] = srcData[i];
+                }
+            }
+            srcData = needLoad;
+            return result;
+        }
+    }
+
+
+</script>
+
+<!--top-->
+<div class="dtop">
+    <div class="dtopbox">
+        <div class="dtopbox_left"><a href="javascript:self.CloseWebPage()"><i></i><span>关闭本页</span></a></div>
+        <div class="dtopbox_logo">
+            <div class="dtopbox_logo1"></div>
+        </div>
+        <div class="dtopbox_right">
+            <a href=""><i></i><span>联系Anne</span>
+                <ul class="bottom-ul">
+                    <li title="手机联系"><b class="i01"></b>13476115920</li>
+                    <li title="QQ联系"><b class="i02"></b>359473771</li>
+                    <li title="发送邮箱"><b class="i03"></b>359473771@qq.com</li>
+                </ul>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- top end -->
+
+<!-- Main -->
+<div class="topimg"
+     style="background:url(img2/work13_bg.jpg)/*tpa=http://www.cj-designrs.com/images/images/1t_06.jpg*/ no-repeat top center;"></div>
+
+<div id="gb_container" class="tmain">
+    <div class="tmainimg"><img src="img2/work13_1.jpg"/></div>
+    <div class="tmainimg"><img src="img2/work13_2.jpg"/></div>
+    <div class="tmainimg"><img src="img2/work13_3.jpg"/></div>
+    <div class="tmainimg"><img src="img2/work13_4.jpg"/></div>
+    <div class="tmainimg"><img src="img2/work13_5.jpg"/></div>
+    <div class="tmainimg"><img src="img2/work13_6.jpg"/></div>
+</div>
+<!-- Main end -->
+
+<!-- fixed -->
+<div id="allxf">
+    <div class="allxf_top"></div>
+    <div class="allxf_gl" style=" height:133px;">
+        <div class="allxf_glnks1"><a title="上一个案例" href="12.html"><i></i></a></div>
+        <div class="allxf_glnks2"><a href="works.html" title="案例列表"><i></i></a></div>
+        <div class="allxf_glnks3"><a id="totop" href="#" title="返回头部"><i></i></a></div>
+    </div>
+    <div class="allxf_bo"></div>
+</div>
+<!-- fixed end -->
+
+<!-- Bottom -->
+<div class="abottom">
+    <div class="abottombox_leftback"><a href="javascript:self.CloseWebPage()"><i></i><span>关闭本页</span></a></div>
+</div>
+<!-- Bottom end -->
+<script type="text/javascript">
+    var s = new ImagesDelay("#gb_container");
+</script>
+</body>
+</html>

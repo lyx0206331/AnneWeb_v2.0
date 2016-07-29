@@ -450,17 +450,19 @@ h2.resp-accordion:hover {
 }
 .contact-info, .contact-form {
     float: left;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .contact-form {
     width: 100%;
 }
 .contact-info ul {
     float: left;
+    margin-bottom: 10px;
     margin-left: 0px; 
 }
 .contact-info ul li {
     font-size: 13px;
+    margin-bottom: 10px;
     line-height: 20px;
     color: #666;
     overflow: hidden;
@@ -499,6 +501,10 @@ h2.resp-accordion:hover {
     cursor: pointer;
     font-size: 13px;
     margin-left: 23px;
+}
+
+#contactform .submit {
+    width: 120px;
 }
 #contactform .submit:hover,
 #comment_form .submit:hover {

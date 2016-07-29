@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Anne设计师·网络品牌 | Anne个人网站</title>
+    <meta name="Keywords" content="Anne设计师·网络品牌 | Anne个人网站 | 网页设计，视觉美化，品牌设计，网站制作，APP界面设计"/>
+    <meta name="Description" content="Anne设计师·网络品牌 | Anne个人网站"/>
+    <link rel="icon" href="img2/favicon.ico" mce_href="img2/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img2/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script type="text/javascript" src="js/gundong.js"></script>
+    <script>
+        $(function () {
+            $.fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        if (!$.support.leadingWhitespace) {
+            window.location.href = "incompatible.html"/*tpa=http://www.cj-designrs.com/incompatible.html*/;
+        }
+    </script>
+</head>
+<body style=" overflow:hidden; height: 100%;">
+<!-- 导航 -->
+<div id="reg_setp">
+    <div class="meun">
+        <ul class="meun-ul">
+            <li>
+                <a href="#page1" class="back_setp">
+                    <i></i>
+                    <span><b></b>HOME</span>
+                </a>
+            </li>
+            <li>
+                <a href="#page2" class="back_setp">
+                    <i></i>
+                    <span><b></b>WORKS</span>
+                </a>
+            </li>
+            <li>
+                <a href="#page3" class="back_setp">
+                    <i></i>
+                    <span><b></b>ABOUT</span>
+                </a>
+            </li>
+            <li>
+                <a href="#page4" class="back_setp">
+                    <i></i>
+                    <span><b></b>CONTACT</span>
+                </a>
+            </li>
+            <div style=" clear:both;"></div>
+        </ul>
+        <div class="meun-logo">
+            <div class="icon-logo"></div>
+            <div class="icon-text"></div>
+        </div>
+    </div>
+    <div class="back_setp" id="back_setp" title="关闭导航"></div>
+    <div id="setp_quicklogin"></div>
+</div>
+<script type="text/javascript">
+    //导航
+    $(function () {
+        $(".reg a,.reg1 a").click(function () {
+            $("#reg_setp,#setp_quicklogin").show();
+            $("#reg_setp").animate({
+                bottom: 0
+            }, 600, "easeOutQuart")
+        });
+        $(".back_setp").click(function () {
+            "block" == $("#setp_quicklogin").css("display") && $("#reg_setp").animate({
+                bottom: "100%"
+            }, 600, "easeOutQuart", function () {
+                $("#reg_setp, #setp_quicklogin").hide()
+            })
+        });
+    });
+</script>
+<!-- 内容 -->
+<div id="superContainer" style="top:0px;">
+    <!-- 加载页 -->
+    <div class="loader"></div>
+    <div id="cj-scattered">
+        <div class="nr-loader">
+            <h1></h1>
+            <em></em>
+            <div class="ball-beat">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Anne首页 -->
+    <div id="section" class="section section1" data-anchor="page1">
+        <div class="reg"><a href="#" onclick="return false;"></a></div>
+        <div class="mouse">
+            <div class="icon_mouse"><i></i></div>
+            <p>鼠标上下滚动切换</p>
+        </div>
+        <!--<div class="bg"></div>-->
+        <div class="bg111 dai"></div>
+        <div class="kuanheight">
+            <div class="cj_left">
+                <div class="cj_left1 dong2">
+                    <ul>
+                        <li>
+                            <div class="sj-1"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cj_right">
+                <div class="cj_right1 dong3">
+                    <ul>
+                        <li>
+                            <div class="sj-2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cj_title dong1">
+                <div class="logo_src logo_l"></div>
+                <div class="logo_src logo_y"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Anne案例 -->
+    <div class="section section2" data-anchor="page2">
+        <div class="reg1"><a
+                style="background: url(img2/icon.png) no-repeat -238px 0;"
+                href="#" onclick="return false;"></a></div>
+        <div class="bg" style="background:#07182a;"></div>
+        <div class="bg17"></div>
+        <div class="bg18"></div>
+        <div class="bg19"></div>
+        <!-- 案例 --->
+        <div class="work_nr">
+            <div class="work_qh">
+                <ul class="work_qhul">
+                    <li><a href="works.html" target="_blank" class="cur">全部作品</a></li>
+                    <li><a href="works.html" target="_blank">Web作品</a></li>
+                    <li><a href="works.html" target="_blank">平面作品</a></li>
+                    <li><a href="works.html" target="_blank">移动作品</a></li>
+                </ul>
+            </div>
+            <div id="work_box">
+                <div id="left"></div>
+                <div id="work_conter">
+                    <ul>
+                        <li>
+                            <a href="1.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_1.jpg"></em>
+                            <p>保利地产 -- 和者筑善</p>
+                        </li>
+                        <li>
+                            <a href="2.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_2.jpg"></em>
+                            <p>Dior官网</p>
+                        </li>
+                        <li>
+                            <a href="3.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_3.jpg"></em>
+                            <p>家居网 -- 家的选择</p>
+                        </li>
+                        <li>
+                            <a href="4.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_4.jpg"></em>
+                            <p>韩伊 -- 相约七夕</p>
+                        </li>
+                        <li>
+                            <a href="5.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_5.jpg"></em>
+                            <p>雀巢冰淇淋海报</p>
+                        </li>
+                        <li>
+                            <a href="6.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_6.jpg"></em>
+                            <p>韩伊专题页 -- 唤醒肌肤沉睡之美</p>
+                        </li>
+                        <li>
+                            <a href="7.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_7.jpg"></em>
+                            <p>茶馆 醉清风 三折页</p>
+                        </li>
+                        <li>
+                            <a href="8.html" target="_blank"><i></i></a>
+                            <em><img src="img2/works_8.jpg"></em>
+                            <p>好力家木业有限公司</p>
+                        </li>
+                        <li class="l-more">
+                            <b class="w-s1"></b>
+                            <b class="w-s2"></b>
+                            <b class="w-s3"></b>
+                            <b class="w-s4"></b>
+                            <a href="works.html" target="_blank"><img src="img2/more.png"></a>
+                        </li>
+                    </ul>
+                    <div id="work_scroll"><span></span></div>
+                </div>
+                <div id="right"></div>
+            </div>
+        </div>
+        <div class="mouse">
+            <div class="icon_mouse"><i></i></div>
+            <p>鼠标上下滚动切换</p>
+        </div>
+    </div>
+    <!-- 关于Anne -->
+    <div class="section section3" data-anchor="page3">
+        <div class="reg1"><a
+                style="background: url(img2/icon.png) no-repeat -474px 0;"
+                href="#" onclick="return false;"></a></div>
+        <div class="bg" style="background:#10202d;"></div>
+        <div class="bg20"></div>
+        <div class="bg21"></div>
+        <div class="bg22"></div>
+        <!-- 关于内容 -->
+        <div class="about_nr">
+            <div class="bg23">
+                <div class="about_ren"></div>
+            </div>
+            <div class="about_js">
+                <ul>
+                    <li>姓名：刘毅(Anne)</li>
+                    <li>年龄：23</li>
+                    <li>性别：女</li>
+                    <li>职业：UI/网页设计师</li>
+                    <li>爱好：JAZZ、音乐、摄影、运动</li>
+                    <li>签名：少一点套路，多一点真诚</li>
+                </ul>
+            </div>
+            <div class="about_skill">
+                <b>Anne的技能</b>
+                <ul>
+                    <li>
+                        <i class="photoshop"></i>
+                        <em>Photoshop</em>
+                    </li>
+                    <li>
+                        <i class="illustrator"></i>
+                        <em>Illustrator</em>
+                    </li>
+                    <li>
+                        <i class="html"></i>
+                        <em>Html / Css</em>
+                    </li>
+                    <li>
+                        <i class="axure"></i>
+                        <em>Axure</em>
+                    </li>
+                </ul>
+            </div>
+            <div class="about_text">
+                我是一个对生活和设计充满无限热情的人。酷爱吉他、摄影、音乐、JAZZ、旅游、运动、美食。关于设计，每一次设计都是新的挑战，每个项目都是一次提高的机会。保持头脑清醒，静下心思考客户的真正想法。至于灵感的来源，源于对设计认真思考和努力创新的态度！
+            </div>
+        </div>
+    </div>
+    <!-- 联系Anne -->
+    <div class="section section4" data-anchor="page4">
+        <div class="reg1"><a
+                style="background: url(img2/icon.png) no-repeat -710px 0;"
+                href="#" onclick="return false;"></a></div>
+        <div class="bg" style="background:#02384e;"></div>
+        <div class="bg24"></div>
+        <div class="bg25"></div>
+        <div class="bg26"></div>
+        <div class="contact_nr">
+            <div class="contact_way">
+                <ul>
+                    <li class="con_lx">
+                        <i></i>
+                        <div class="c">
+                            <span>联系人：</span>
+                            <em>刘毅（Anne）</em>
+                        </div>
+                    </li>
+                    <li class="con_tel">
+                        <i></i>
+                        <div class="c">
+                            <span>手机：</span>
+                            <em>13476115920</em>
+                        </div>
+                    </li>
+                    <li class="con_qq">
+                        <i></i>
+                        <div class="c">
+                            <span>QQ：</span>
+                            <em>359473771</em>
+                        </div>
+                    </li>
+                    <li class="con_mail">
+                        <i></i>
+                        <div class="c">
+                            <span>E-mail：</span>
+                            <em>359473771@qq.com</em>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact_logo"></div>
+        </div>
+    </div>
+</div>
+<div class="cj-wrapper">
+    <canvas id="cj-loader" width="400" height="400"></canvas>
+</div>
+<!-- 底部 -->
+<div class="bottomnr">
+    <p>COPYRIGHT©2016 Anne设计师·网络品牌 All Rights Reserved</p>
+    <iframe src="audio.html" width="18" height="20" frameborder="0"></iframe>
+    <ul class="bottom-ul">
+        <li>联系Anne</li>
+        <li title="手机联系"><i class="i01"></i>13476115920</li>
+        <li title="QQ联系"><i class="i02"></i><a href="#">359473771</a></li>
+        <li title="发送邮箱"><i class="i03"></i>359473771@qq.com</li>
+        <li></li>
+    </ul>
+</div>
+<script>
+    $(function () {
+        $('.section1').on('mousemove', function (e) {
+            var offsetX = e.clientX / window.innerWidth - 0.5,
+                    offsetY = e.clientY / window.innerHeight - 0.5;
+            $('.section1 .dong1').css('left', -10 - 80 * offsetX).css('top', 10 - 40 * offsetY);
+            $('.section1 .dong2').css('left', -10 + 20 * offsetX).css('top', 10 + 20 * offsetY);
+            $('.section1 .dong3').css('right', -10 + 20 * offsetX).css('top', 10 + 20 * offsetY);
+        });
+        $('.section3').on('mousemove', function (e) {
+            var offsetX = e.clientX / window.innerWidth - 0.5,
+                    offsetY = e.clientY / window.innerHeight - 0.5;
+            $('.section3 .about_ren').css('left', -10 - 40 * offsetX).css('top', -10 - 40 * offsetY);
+            $('.section3 .sikao').css('left', -10 + 40 * offsetX).css('top', -10 + 40 * offsetY);
+            $('.section3 .shijue').css('left', -10 + 40 * offsetX).css('top', -10 + 40 * offsetY);
+            $('.section3 .chuanyi').css('left', -10 + 40 * offsetX).css('top', -10 + 40 * offsetY);
+        });
+    })
+</script>
+<script src="https://s4.cnzz.com/z_stat.php?id=1259941787&web_id=1259941787" language="JavaScript"></script>
+</body>
+</html>

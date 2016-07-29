@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Anne设计师·网络品牌 | Anne个人网站</title>
+    <meta name="Keywords" content="Anne设计师·网络品牌 | Anne个人网站 | 网页设计，视觉美化，品牌设计，网站制作，APP界面设计">
+    <meta name="Description" content="Anne设计师·网络品牌 | Anne个人网站"/>
+    <link rel="icon" href="img2/favicon.ico" mce_href="img2/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img2/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+</head>
+<body style=" background:none;">
+<!-- 音乐 -->
+<audio src="assets/bg_music.mp3" controls loop autoplay id="music"></audio>
+<div id="c_music"><span class="pause" onClick="pause()" title="音乐暂停"></span></div>
+<div id="allCity"></div>
+<script>
+    $(function () {
+        //点击播放~暂停
+        $("#c_music").click(function () {
+            if ($('#allCity').css('display') == "block") {
+                $("#allCity").hide();
+                $('#c_music').html('<span class="play" onclick="play()" title="音乐播放"></span>');
+            } else {
+                $("#allCity").show();
+                $('#c_music').html('<span class="pause" onclick="pause()" title="音乐暂停"></span>');
+            }
+        });
+    });
+</script>
+<script language="javascript">
+    var music = document.getElementById("music");
+    function play() {
+        //播放按钮
+        music.play();
+    }
+    function pause() {
+        //暂停按钮
+        music.pause();
+    }
+</script>
+</body>
+</html>
